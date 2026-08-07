@@ -90,7 +90,7 @@ def fetch_video_transcript(url: str) -> str:
 
         # Construct proxy URLs with credentials
         http_proxy_url = f"http://{proxy_username}:{proxy_password}@{proxy_url_base}"
-        https_proxy_url = f"https://{proxy_username}:{proxy_password}@{proxy_url_base}"
+        https_proxy_url = f"http://{proxy_username}:{proxy_password}@{proxy_url_base}"
 
         proxy_config = GenericProxyConfig(
             http_url=http_proxy_url,
